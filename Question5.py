@@ -11,12 +11,15 @@ for each in splitX:
 for v in splitY:
     integer = int(v)
     Y.append(integer)
-count = 0
-for x in X:
-    for y in Y:
-        if x%y == 0:
+for y in Y:
+    count = 0
+    for x in X:
+        if x%y != 0:
             count += 1
-if count == len(X):
+    if count == 0:
+        truth = True
+        break
+if truth:
     print('True')
 else:
     print('False')

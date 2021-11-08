@@ -93,7 +93,7 @@ for w,x in listR:
         if x == y and ((w, z) not in listR):
             not_transitive.append([w, x])
             not_transitive.append([y, z])
-            answer = (f"R is not transitive: {not_transitive}")
+            answer = f"R is not transitive: {not_transitive}"
             break
 print(answer)
 
@@ -104,7 +104,7 @@ var = True
 for a, b in listR:
     if (b, a) not in listR:
         not_symmetric.append([a, b])
-        response = (f"R is not symmetric: {not_symmetric}")
+        response = f"R is not symmetric: {not_symmetric}"
         var = False
 if var is True:
     response = "R is symmetric"
